@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Staff Dashboard</h2>
+        <div class="options">
+            <a href="/view_all" class="btn">View All Payments</a>
+            <form action="/student_details" method="POST" class="search-form">
+                <input type="text" name="enrollment" placeholder="Enter Enrollment No." required>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </div>
+</body>
+<style>
+    body{
+        background-image: url('/static/images/stf.jpg');
+        
+        background-size: 1500px;
+        background-position: center;
+        height: 90vh;
+        justify-content: right;
+        align-items: right;
+        text-align: center;
+        background-color: rgba(123, 38, 38, 0.1);
+       
+        animation: fadeIn 1.5s ease-out;
+    }
+</style>
+</html>

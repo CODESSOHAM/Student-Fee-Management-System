@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="receipt-container">
+        <h2>Payment Receipt</h2>
+        <div class="receipt-details">
+            <p><strong>Student Name:</strong> {{ name }}</p>
+            <p><strong>Amount Paid:</strong> ₹{{ amount }}</p>
+            <p><strong>Date of Payment:</strong> {{ date }}</p>
+        </div>
+        <p class="thank-you">Thank you for your payment!</p>
+        <button class="btn" onclick="window.print()">Print Receipt</button>
+        <a href="/" class="btn">Go to Home</a>
+    </div>
+</body>
+</html>
