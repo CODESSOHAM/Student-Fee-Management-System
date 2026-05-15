@@ -1,15 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
-import mysql.connector
+from db_config import get_connection
 
 app = Flask(__name__)
 
-
-db = mysql.connector.connect(
-    host="localhost",
-    user="root",  
-    password="Soham@2006",  
-    database="student_management"  
-)
+db = get_connection()
 cursor = db.cursor()
 
 
